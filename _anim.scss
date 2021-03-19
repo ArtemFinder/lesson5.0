@@ -1,0 +1,19 @@
+@keyframes header-load {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: -10% 25%;
+    }
+
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+.header {
+    animation: header-load 2s 1;
+}
+
+.nav:hover {
+    color: white;
+}

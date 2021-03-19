@@ -3,9 +3,21 @@
     padding: 0;
 }
 
+@import "vars";
+@import "anim";
+
 .header {
-    background-image: url(img/bg_header.png);
+    background-image: url(img/bg_header.jpg);
     background-size: cover;
     background-position: top;
     height: 100vh;
+}
+
+nav {
+    color: #38c41c;
+    background-color: black;
+    position: fixed;
+    top: 30vh;
+    width: min-content;
+    transition: color 1s;
 }
