@@ -1,19 +1,32 @@
-@keyframes header-load {
+@keyframes site-load {
     0% {
-        transform: scale(0);
+        transform: translate(0, -100%);
         opacity: 0;
-        transform-origin: -10% 25%;
     }
 
-    100% {
-        transform: scale(1) rotate(360deg);
+    40% {
+        transform: translate(0, -100%);
+        opacity: 0;
     }
 }
 
 .header {
-    animation: header-load 2s 1;
+    animation: site-load 3s 1;
+}
+
+.header__title {
+    animation: site-load 5s 1;
+}
+
+.nav {
+    animation: site-load 5s 1;
+    animation-timing-function: cubic-bezier(.7, 0, .5, 1);
 }
 
 .nav:hover {
-    color: white;
+    opacity: 1;
+}
+
+.nav__button:hover {
+    background-color: $color_menu_on;
 }

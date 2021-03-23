@@ -6,18 +6,60 @@
 @import "vars";
 @import "anim";
 
+a,
+p {
+    font-family: $font_family_main;
+    font-weight: $font_weight_main;
+}
+
+.nav {
+    background-color: $color_background2;
+    border-bottom: 2px solid $color_menu_on;
+    opacity: 70%;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    transition: opacity 0.3s;
+
+    .nav__container {
+        display: flex;
+        justify-content: flex-end;
+        margin: auto;
+        max-width: 1000px;
+    }
+
+    .nav__button {
+        color: $color_text;
+        padding: 10px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
+    .nav__gamburger {
+        display: none;
+    }
+}
+
 .header {
     background-image: url(img/bg_header.jpg);
     background-size: cover;
     background-position: top;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .header__title {
+        color: $color_text;
+        margin: 15px;
+        text-align: center;
+        text-shadow: 2px 2px 3px $color_background2;
+        font-family: Kelly Slab;
+    }
 }
 
-nav {
-    color: #38c41c;
-    background-color: black;
-    position: fixed;
-    top: 30vh;
-    width: min-content;
-    transition: color 1s;
+.footer p {
+    text-align: center;
 }
+
+@import "amedia";
