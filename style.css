@@ -79,6 +79,7 @@ p {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin: auto;
+  padding-right: 17px;
   max-width: 1000px;
 }
 
