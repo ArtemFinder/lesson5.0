@@ -1,0 +1,32 @@
+@keyframes site-load {
+    0% {
+        transform: translate(0, -100%);
+        opacity: 0;
+    }
+
+    40% {
+        transform: translate(0, -100%);
+        opacity: 0;
+    }
+}
+
+.header {
+    animation: site-load 3s 1;
+}
+
+.header__title {
+    animation: site-load 5s 1;
+}
+
+.nav {
+    animation: site-load 5s 1;
+    animation-timing-function: cubic-bezier(.7, 0, .5, 1);
+}
+
+.nav:hover {
+    opacity: 1;
+}
+
+.nav__button:hover {
+    background-color: $color_menu_on;
+}
